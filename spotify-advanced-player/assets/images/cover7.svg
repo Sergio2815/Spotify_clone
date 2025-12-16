@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+  <rect width="100%" height="100%" fill="#081018"/>
+  <path d="M0 300 C150 100 450 500 600 300 L600 600 L0 600 Z" fill="#00d4ff" opacity="0.12"/>
+  <text x="50%" y="85%" font-size="28" fill="#fff" text-anchor="middle">Drift</text>
+</svg>

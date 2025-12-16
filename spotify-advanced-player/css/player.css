@@ -1,0 +1,20 @@
+/* Player-specific styling */
+#coverWrap{position:relative}
+#loadingIndicator{position:absolute;inset:14px;border-radius:8px;background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));display:none}
+.controls .player-right{display:flex;gap:12px;align-items:center}
+.volume input{width:100px}
+.modes button{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+.modes button.active{border-color:var(--accent);color:var(--accent)}
+.playlist-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.track-artist{color:var(--muted);font-size:13px}
+.track-cover{width:48px;height:48px;border-radius:8px;overflow:hidden}
+.track-cover img{width:100%;height:100%;object-fit:cover}
+.ripple{position:relative;overflow:hidden}
+.ripple:after{content:'';position:absolute;border-radius:50%;transform:scale(0);opacity:0.6;transition:transform 400ms, opacity 800ms;background:rgba(255,255,255,0.08)}
+.ripple:active:after{transform:scale(4);opacity:0}
+
+.song-fade-enter{animation:fadeIn 420ms ease}
+.song-fade-exit{animation:fadeOut 420ms ease}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0;transform:translateY(-8px)}}

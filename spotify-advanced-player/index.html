@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spotify Advanced Player</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div id="app" class="dark">
+    <aside class="sidebar">
+      <div class="brand">Sunrise Player</div>
+      <nav>
+        <button data-nav="home" class="active">Home</button>
+        <button data-nav="search">Search</button>
+        <button data-nav="library">Library</button>
+      </nav>
+      <div class="small-player" id="miniToggle">Mini Player</div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="search-box">
+          <input id="searchInput" placeholder="Search tracks, artists, albums...">
+        </div>
+        <div class="user-controls">
+          <button id="fullscreenBtn">Fullscreen</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="now-playing card glass" id="nowPlaying">
+          <div class="cover" id="coverWrap">
+            <img id="coverImage" src="assets/images/cover1.svg" alt="cover">
+            <div class="loading" id="loadingIndicator" aria-hidden></div>
+          </div>
+          <div class="meta">
+            <h2 id="title">Title</h2>
+            <p id="artist">Artist</p>
+            <div class="controls">
+              <div class="buttons">
+                <button id="prevBtn" class="icon">◀◀</button>
+                <button id="playBtn" class="play icon">▶</button>
+                <button id="nextBtn" class="icon">▶▶</button>
+              </div>
+              <div class="progress">
+                <span id="currentTime">0:00</span>
+                <input id="seek" type="range" min="0" max="100" value="0">
+                <span id="duration">0:00</span>
+              </div>
+              <div class="player-right">
+                <div class="volume">
+                  <button id="muteBtn">🔊</button>
+                  <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8">
+                </div>
+                <div class="modes">
+                  <button id="shuffleBtn">Shuffle</button>
+                  <button id="repeatBtn">Repeat</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="playlist card glass" id="playlistArea">
+          <div class="playlist-header">
+            <h3>Playlist</h3>
+            <div class="actions">
+              <button id="shuffleAll">Shuffle All</button>
+            </div>
+          </div>
+          <ul id="playlist"></ul>
+        </aside>
+
+        <section class="queue card glass">
+          <h3>Up Next</h3>
+          <ul id="queueList"></ul>
+        </section>
+        <section class="card glass">
+          <h3>Liked Songs</h3>
+          <ul id="likedList"></ul>
+        </section>
+
+        <section class="card glass">
+          <h3>Recently Played</h3>
+          <ul id="recentList"></ul>
+        </section>
+      </section>
+    </main>
+
+    <div id="miniPlayer" class="mini hidden glass">
+      <img id="miniCover" src="assets/images/cover1.svg">
+      <div class="mini-meta">
+        <div id="miniTitle">Title</div>
+        <div id="miniArtist">Artist</div>
+      </div>
+      <div class="mini-controls">
+        <button id="miniPrev">◀</button>
+        <button id="miniPlay">▶</button>
+        <button id="miniNext">▶</button>
+      </div>
+    </div>
+
+    <audio id="audio" preload="metadata"></audio>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

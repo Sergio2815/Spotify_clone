@@ -1,0 +1,74 @@
+[
+  {
+    "id": "s1",
+    "title": "Morning Glow",
+    "artist": "Aurora Skies",
+    "album": "First Light",
+    "duration": 185,
+    "coverImage": "assets/images/cover1.svg",
+    "audioSrc": "assets/audio/song1.mp3"
+  },
+  {
+    "id": "s2",
+    "title": "City Pulse",
+    "artist": "Neon Habit",
+    "album": "Midnight Drive",
+    "duration": 214,
+    "coverImage": "assets/images/cover2.svg",
+    "audioSrc": "assets/audio/song2.mp3"
+  },
+  {
+    "id": "s3",
+    "title": "Echoes & Rain",
+    "artist": "Velvet Hour",
+    "album": "Room 113",
+    "duration": 242,
+    "coverImage": "assets/images/cover3.svg",
+    "audioSrc": "assets/audio/song3.mp3"
+  },
+  {
+    "id": "s4",
+    "title": "Paper Boats",
+    "artist": "Tide Lines",
+    "album": "Shoreline",
+    "duration": 198,
+    "coverImage": "assets/images/cover4.svg",
+    "audioSrc": "assets/audio/song4.mp3"
+  },
+  {
+    "id": "s5",
+    "title": "Polaroid",
+    "artist": "Cassette Romance",
+    "album": "Polaroids",
+    "duration": 160,
+    "coverImage": "assets/images/cover5.svg",
+    "audioSrc": "assets/audio/song5.mp3"
+  },
+  {
+    "id": "s6",
+    "title": "Analog Dreams",
+    "artist": "Night Module",
+    "album": "Sleep Mode",
+    "duration": 230,
+    "coverImage": "assets/images/cover6.svg",
+    "audioSrc": "assets/audio/song6.mp3"
+  },
+  {
+    "id": "s7",
+    "title": "Drift",
+    "artist": "Paper Planes",
+    "album": "Altitude",
+    "duration": 205,
+    "coverImage": "assets/images/cover7.svg",
+    "audioSrc": "assets/audio/song7.mp3"
+  },
+  {
+    "id": "s8",
+    "title": "Afterglow",
+    "artist": "Halo Nova",
+    "album": "Dawn",
+    "duration": 192,
+    "coverImage": "assets/images/cover8.svg",
+    "audioSrc": "assets/audio/song8.mp3"
+  }
+]
